@@ -1,3 +1,10 @@
+# -*- coding: UTF-8 -*-
+import numpy as np
+import random
+
+def sigmoid(x):
+    return 1.0 / (1.0 + np.exp(-x))
+
 class Node(object):
     def __init__(self, layer_index, node_index):
         '''
@@ -11,6 +18,8 @@ class Node(object):
         self.upstream = []
         self.output = 0
         self.delta = 0
+
+
     def set_output(self, output):
         '''
         设置节点的输出值。如果节点属于输入层会用到这个函数。

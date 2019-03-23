@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-#!/usr/bin/python3
 from perception import Perceptron
 #定义激活函数f
 f = lambda x: x
